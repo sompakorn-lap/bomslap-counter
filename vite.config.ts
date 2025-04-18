@@ -16,6 +16,7 @@ export default defineConfig({
         short_name: "Counter",
         name: "BomSLap - Counter",
         theme_color: "#222831",
+        background_color: "#222831",
       },
     }),
   ],
