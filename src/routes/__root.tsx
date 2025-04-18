@@ -8,20 +8,24 @@ export const Route = createRootRoute({
 function Layout() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
-      <header className="w-full p-4 text-xl text-center bg-black text-gray-100">
+      <header className="w-full p-4 text-xl text-center bg-[#222831] text-[#EEEEEE]">
         <h1>BomSLap - Counter</h1>
       </header>
 
-      <main className="p-2">
+      <main className="p-2 bg-[#393E46]">
         <Outlet />
       </main>
 
-      <footer className="w-full p-2 bg-black text-gray-100">
+      <footer className="w-full p-2 bg-[#222831] text-[#EEEEEE]">
         <a
           className="flex gap-2"
           href="https://github.com/sompakorn-lap/bomslap-counter"
         >
-          <Icon icon="mdi:github" width={24} height={24} />
+          <Icon
+            icon="mdi:github"
+            width={24}
+            height={24}
+          />
           <span>GITHUB</span>
         </a>
       </footer>

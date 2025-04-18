@@ -17,11 +17,17 @@ function useCounters() {
     setCounts((prev) => prev.map((v, i) => (i === index ? 0 : v)));
   }
 
-  function addCounter() {
-    setCounts(prev => [...prev, 0]);
+  function handleNewCounter() {
+    setCounts((prev) => [...prev, 0]);
   }
 
-  return { counts, handleIncrease, handleDecrease, handleReset, addCounter };
+  return {
+    counts,
+    handleIncrease,
+    handleDecrease,
+    handleReset,
+    handleNewCounter,
+  };
 }
 
 export default useCounters;
